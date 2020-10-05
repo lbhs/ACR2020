@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,7 @@ public class InitalVelocity : MonoBehaviour
         rb.velocity = (Vector3.down * _velocity);
         GameObject.Find("Start Button").GetComponent<Button>().interactable = false;
         GameObject.Find("Reset Button").GetComponent<Button>().interactable = true;
+        GameObject.Find("Slider").GetComponent<EditDistanceFromSun>().enabled = false;
     }
 
     // when the text field is finished being updated
