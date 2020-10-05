@@ -13,7 +13,7 @@ public class InitalVelocity : MonoBehaviour
     {
         Rigidbody rb = this.GetComponent<Rigidbody>();
         rb.isKinematic = false;
-        rb.velocity = (Vector3.down * _velocity);
+        rb.velocity = (Vector3.up * _velocity);
         GameObject.Find("Start Button").GetComponent<Button>().interactable = false;
         GameObject.Find("Reset Button").GetComponent<Button>().interactable = true;
         GameObject.Find("Slider").GetComponent<EditDistanceFromSun>().enabled = false;

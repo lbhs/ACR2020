@@ -18,6 +18,7 @@ public class EditCamera : MonoBehaviour
     {
         //cam.orthographicSize = zoomModifier;
         //cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, zoomModifier, Time.deltaTime * zoomLerpSpeed);
+
         cam.orthographicSize = zoomModifier;
     }
 }

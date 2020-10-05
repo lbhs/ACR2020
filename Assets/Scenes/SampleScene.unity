@@ -496,7 +496,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -111, y: 67}
+  m_AnchoredPosition: {x: -168, y: 67}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302429047
@@ -525,7 +525,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3596,6 +3596,7 @@ GameObject:
   - component: {fileID: 1534443414}
   - component: {fileID: 1534443415}
   - component: {fileID: 1534443417}
+  - component: {fileID: 1534443416}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -3671,7 +3672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534443408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.5, y: 0, z: 0}
+  m_LocalPosition: {x: 52.5, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 1955120809}
@@ -3722,6 +3723,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   massMargin: 0.1
+--- !u!114 &1534443416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534443408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e2abb17e4d74d2fbc88a570383c50c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 1995761636}
 --- !u!114 &1534443417
 MonoBehaviour:
   m_ObjectHideFlags: 0
