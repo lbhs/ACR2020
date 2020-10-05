@@ -17,6 +17,7 @@ public class EditCamera : MonoBehaviour
     public void ChangeCameraViewAngle(float zoomModifier)
     {
         //cam.orthographicSize = zoomModifier;
-        cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, zoomModifier, Time.deltaTime * zoomLerpSpeed);
+        //cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, zoomModifier, Time.deltaTime * zoomLerpSpeed);
+        cam.orthographicSize = zoomModifier;
     }
 }
