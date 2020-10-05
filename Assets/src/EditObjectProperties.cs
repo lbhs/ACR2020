@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class EditObjectProperties : MonoBehaviour
-{
+{ 
     [SerializeField] private float massMargin;
 
     private void Start()
@@ -12,7 +12,7 @@ public class EditObjectProperties : MonoBehaviour
         float m = this.GetComponent<Rigidbody>().mass;
 
         float sqrtM = Mathf.Sqrt(m);
-        this.transform.localScale = new Vector3(sqrtM, sqrtM, sqrtM); // <-- changes scale of an object to the Vector3
+        this.transform.localScale = new Vector3(sqrtM, sqrtM, sqrtM); // <-- remove?
     }
 
     public void IncreaseMass()
@@ -25,7 +25,6 @@ public class EditObjectProperties : MonoBehaviour
         this.GetComponent<Rigidbody>().mass -= massMargin;
     }
 
-    // can be cleaned up
     public void GravitySwitch()
     {
         Gravity g = this.GetComponent<Gravity>();
@@ -59,5 +58,4 @@ public class EditObjectProperties : MonoBehaviour
         float sqrtM = Mathf.Sqrt(m);
         this.transform.localScale = new Vector3(sqrtM, sqrtM, sqrtM); // <-- changes scale of an object to the Vector3
     }
-
 }
