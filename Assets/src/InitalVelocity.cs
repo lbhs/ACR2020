@@ -16,7 +16,7 @@ public class InitalVelocity : MonoBehaviour
         rb.velocity = (Vector3.down * _velocity);
         GameObject.Find("Start Button").GetComponent<Button>().interactable = false;
         GameObject.Find("Reset Button").GetComponent<Button>().interactable = true;
-        GameObject.Find("Slider").GetComponent<EditDistanceFromSun>().enabled = false;
+        GameObject.Find("DistanceFromSun Slider").GetComponent<EditDistanceFromSun>().enabled = false;
     }
 
     // when the text field is finished being updated
