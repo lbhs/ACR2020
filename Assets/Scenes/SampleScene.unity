@@ -4624,7 +4624,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ToggleUI
+  m_Text: Toggle UI
 --- !u!222 &1807694026
 CanvasRenderer:
   m_ObjectHideFlags: 0
