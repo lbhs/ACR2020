@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class InitalVelocity : MonoBehaviour
 {
-    private int _velocity;
+    private int _velocity = 14;
 
     // when the button is pressed
     public void StartGame()
